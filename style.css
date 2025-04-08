@@ -1,0 +1,318 @@
+* {
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  margin: 0;
+  background-color: white;
+}
+
+.pop-up-background {
+  position: absolute;
+
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 70%;
+}
+
+.pop-up {
+  position: absolute;
+  background-color: white;
+  width: 25rem;
+  height: 25rem;
+  border-radius: 1rem;
+
+  display: flex;
+  flex-direction: column;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.pop-up.dark {
+  background-color: #18181b;
+}
+
+.pop-up-title {
+  font-size: 2rem;
+  color: #6d28d9;
+  margin-bottom: 3rem;
+}
+
+.pop-up-info {
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 2rem;
+  font-size: 1.7rem;
+}
+
+.pop-up-info.dark {
+  color: white;
+}
+
+.pop-up-close {
+  margin-top: 2rem;
+}
+
+.pop-up-close.dark {
+  color: white;
+}
+
+.spacer {
+  height: 25vh;
+}
+
+body.dark {
+  background-color: #18181b;
+}
+
+.title {
+  width: 80%;
+  max-width: 1000px;
+  min-width: 600px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title-title {
+  font-size: 3rem;
+  color: #6d28d9;
+}
+
+.title-right {
+  display: flex;
+  align-items: center;
+}
+
+.dark-mode-icon {
+  /* width: 2rem; */
+  color: black;
+}
+
+.dark-mode-icon.dark {
+  color: white;
+}
+
+.display-none {
+  display: none;
+}
+
+.dark-mode-text {
+  font-size: 1.4rem;
+}
+
+.dark-mode-text.dark {
+  color: white;
+}
+
+.container {
+  /*border: 1px solid black;*/
+  width: 80%;
+  border-radius: 1rem;
+
+  max-width: 1000px;
+  min-width: 600px;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  /*padding-bottom: 2rem;*/
+  margin-bottom: 2rem;
+  background-color: #f4f4f5;
+}
+
+.container.dark {
+  background-color: #27272a;
+}
+
+.upper-container {
+  /* border: 1px solid green; */
+  margin: 1rem;
+}
+
+.typing-info-settings {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.result-period-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.result-period-btn {
+  border: none;
+  background: none;
+  color: black;
+}
+
+.result-period-btn:hover {
+  cursor: pointer;
+}
+
+.result-period-btn.dark {
+  color: white;
+}
+
+.result-period-value {
+  font-size: 1.8rem;
+}
+
+.result-period-value.dark {
+  color: white;
+}
+
+.CPM-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.currentCPM-text.dark {
+  color: white;
+}
+
+.speed-check {
+  font-size: 1.6rem;
+}
+
+.speed-check.dark {
+  color: white;
+}
+
+#speedCheck {
+  margin-left: 3rem;
+}
+
+#maxSpeed {
+  margin-left: 3rem;
+}
+
+.typing-info {
+  display: flex;
+  justify-content: space-around;
+  /* border: 1px solid blue; */
+  margin-top: 1rem;
+  /* margin-bottom: 1rem; */
+}
+
+.typing-info > div > span {
+  font-size: 1.2rem;
+}
+
+.typing-info > div > span.dark {
+  font-size: 1.2rem;
+  color: white;
+}
+
+.typing-info-value {
+  margin-left: 2rem;
+}
+
+.none {
+  color: gray;
+}
+
+.none.dark {
+  color: #71717a;
+}
+
+.correct {
+  color: black;
+}
+
+.correct.dark {
+  color: white;
+}
+
+.incorrect {
+  color: #ef4444;
+}
+
+.bottom-container {
+  padding: 2rem;
+  padding-top: 1rem;
+}
+
+.quote-display {
+  font-size: 1.6rem;
+  margin-bottom: 1.5rem;
+}
+
+.qutoe-author {
+  /* margin-top: 1rem; */
+  margin-bottom: 0.5rem;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.qutoe-author-text {
+  font-size: 1.2rem;
+}
+
+.qutoe-author-text.dark {
+  color: #a1a1aa;
+}
+
+.quote-input {
+  border: none;
+  border-bottom: 0.2rem solid #6d28d9;
+  width: 100%;
+
+  padding: 0%;
+
+  overflow-y: hidden;
+
+  resize: none;
+  outline: none;
+  font-size: 1.6rem;
+  background-color: #f4f4f5;
+}
+
+.quote-input.dark {
+  background-color: #27272a;
+  color: white;
+}
+
+.quote-input::placeholder {
+  color: #a1a1aa;
+}
+
+.contact {
+  text-decoration: none;
+  color: black;
+}
+
+.contact:hover {
+  text-decoration: underline;
+}
+
+.contact.dark {
+  color: white;
+}

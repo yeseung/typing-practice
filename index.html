@@ -1,0 +1,142 @@
+
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keyword" content="typing-practice, 타자연습, 짧은문장" />
+    <meta name="description" content="짧은 문장 타자 연습" />
+    <meta name="google-adsense-account" content="ca-pub-7247331707921389">
+    <title>Typing Practice</title>
+
+    <script
+            src="https://kit.fontawesome.com/d6d812d2c1.js"
+            crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="koreanChar.js"></script>
+    <script defer src="ConfigConstant.js"></script>
+    <script defer src="utils.js"></script>
+    <script defer src="dark.js"></script>
+    <script defer src="sentence.js"></script>
+    <script defer src="popup.js"></script>
+    <script defer src="main.js"></script>
+
+
+    <script>
+        window.va =
+            window.va ||
+            function () {
+                (window.vaq = window.vaq || []).push(arguments);
+            };
+    </script>
+    <script defer src="script.js"></script>
+</head>
+<body id="body">
+<div class="pop-up-background display-none" id="pop-up-background"></div>
+<div class="pop-up display-none" id="pop-up">
+    <h1 class="pop-up-title">Typing Practice</h1>
+    <div class="pop-up-info pop-up-avg-cpm">
+        <span>Avg CPM</span>
+        <span id="pop-up-avg-cpm">0</span>
+    </div>
+    <div class="pop-up-info pop-up-max-cpm">
+        <span>Max CPM</span>
+        <span id="pop-up-max-cpm">0</span>
+    </div>
+    <div class="pop-up-info pop-up-acc">
+        <span>ACC</span>
+        <span id="pop-up-acc">0</span>
+    </div>
+    <div class="pop-up-close">
+        <span>press ESC to continue</span>
+    </div>
+</div>
+<div class="title">
+    <div class="title-left">
+        <h1 class="title-title">Typing Practice</h1>
+    </div>
+
+    <div class="title-right">
+        <i class="fa-regular fa-sun fa-xl dark-mode-icon" id="icon-sun"></i>
+        <i class="fa-regular fa-moon fa-xl dark-mode-icon" id="icon-moon"></i>
+    </div>
+</div>
+
+<div class="container upper-container">
+    <div class="speed-check-container">
+        <div class="typing-info-settings">
+            <div>
+                <input type="checkbox" id="currentCPM" checked />
+                <label for="currentCPM" class="currentCPM-text"
+                >실시간 타자 속도</label
+                >
+            </div>
+
+            <div class="result-period-container" id="result-period-container">
+                <button class="result-period-btn" id="result-period-btn-down" aria-label="result-period-btn-down">
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <span class="result-period-value" id="result-period-value">5</span>
+                <button class="result-period-btn" id="result-period-btn-up" aria-label="result-period-btn-up">
+                    <i class="fa-solid fa-chevron-up"></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="CPM-container">
+            <div>
+                <span class="speed-check" id="speed-check-text">Current CPM</span>
+                <span class="speed-check" id="speedCheck">0</span>
+            </div>
+            <div>
+                <span class="speed-check" id="max-speed-text">Highest CPM</span>
+                <span class="speed-check" id="maxSpeed">0</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="typing-info" id="typingInfo">
+        <div>
+            <span class="typing-info-CPM">CPM</span>
+            <span class="typing-info-CPM typing-info-value" id="cpm">-</span>
+        </div>
+
+        <div>
+            <span class="typing-info-ACC">ACC</span>
+            <span class="typing-info-ACC typing-info-value" id="acc">-</span>
+        </div>
+
+        <div>
+            <span class="typing-info-CNT">CNT</span>
+            <span class="typing-info-CNT typing-info-value" id="cnt">-</span>
+        </div>
+    </div>
+</div>
+
+<div class="container bottom-container">
+    <div id="quote-container">
+        <div class="qutoe-author">
+          <span class="qutoe-author-text" id="quoteAuthor"
+          >Temporal author</span
+          >
+        </div>
+        <div class="quote-display" id="quoteDisplay">Temporal quote</div>
+    </div>
+    <textarea
+            class="quote-input"
+            id="quoteInput"
+            placeholder="위 문장을 입력하세요."
+            autofocus
+            autocomplete="off"
+            spellcheck="false"
+            rows="1"
+            cols="30"
+    ></textarea>
+</div>
+<div class="spacer"></div>
+<a class="contact" id="contact">Contact</a>
+</body>
+</html>
